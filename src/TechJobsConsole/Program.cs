@@ -8,7 +8,7 @@ namespace TechJobsConsole
         static void Main(string[] args)
         {
             // Create two Dictionary vars to hold info for menu and data
-            //trial
+            
             // Top-level menu options
             Dictionary<string, string> actionChoices = new Dictionary<string, string>();
             actionChoices.Add("search", "Search");
@@ -117,8 +117,21 @@ namespace TechJobsConsole
         }
 
         private static void PrintJobs(List<Dictionary<string, string>> someJobs)
-        {
-            Console.WriteLine("PrintJobs is not implemented yet");
+        {            
+            if (someJobs.Count < 1)
+            {
+                Console.WriteLine("No results.");
+            } 
+            else
+            {
+                foreach (Dictionary<string, string> jobs in someJobs)
+                {
+                    foreach (string listings in jobs.Keys)
+                    {
+                        Console.WriteLine(listings + ": " + jobs[listings]);
+                    }
+                }
+            }
         }
     }
 }
