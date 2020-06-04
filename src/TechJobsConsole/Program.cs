@@ -132,9 +132,9 @@ namespace TechJobsConsole
                 foreach (Dictionary<string, string> jobs in someJobs)
                 {
                     Console.WriteLine("*****");
-                    foreach (string listings in jobs.Keys)
+                    foreach (string aValue in jobs.Keys)
                     {
-                        Console.WriteLine(listings + ": " + jobs[listings]);
+                        Console.WriteLine(aValue + ": " + jobs[aValue]);
                     }
                     Console.WriteLine("*****\r\n");
                 }
