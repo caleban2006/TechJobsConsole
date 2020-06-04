@@ -123,16 +123,20 @@ namespace TechJobsConsole
         {            
             if (someJobs.Count < 1)
             {
+                Console.WriteLine("*****");
                 Console.WriteLine("No results.");
+                Console.WriteLine("*****\r\n");
             } 
             else
             {
                 foreach (Dictionary<string, string> jobs in someJobs)
                 {
+                    Console.WriteLine("*****");
                     foreach (string listings in jobs.Keys)
                     {
                         Console.WriteLine(listings + ": " + jobs[listings]);
                     }
+                    Console.WriteLine("*****\r\n");
                 }
             }
         }
