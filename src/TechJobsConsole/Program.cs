@@ -8,7 +8,7 @@ namespace TechJobsConsole
         static void Main(string[] args)
         {
             // Create two Dictionary vars to hold info for menu and data
-
+            //trial
             // Top-level menu options
             Dictionary<string, string> actionChoices = new Dictionary<string, string>();
             actionChoices.Add("search", "Search");
